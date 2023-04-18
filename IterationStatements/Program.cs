@@ -58,7 +58,7 @@
 
             do
             {
-                Console.WriteLine("Hello, Please enter your age");
+                Console.WriteLine("Hello, Please enter your age to check if you can vote");
                 isParsed = int.TryParse(Console.ReadLine(), out userAge);
             }
             while(!isParsed);
@@ -71,17 +71,17 @@
         //Write a method to check if an integer(from the user) is in the range -10 to 10
         public static void CheckIntInRange()
         {
-            Console.WriteLine("Please enter a number");
+            Console.WriteLine("Please enter a number between -10 and 10");
             var inputNum =  int.Parse(Console.ReadLine());
 
-            var output = (inputNum >= -10 && inputNum <= 10)? "Integer within the range": "Integer not in range";
+            var output = (inputNum >= -10 && inputNum <= 10)? "Integer within the range 0f -10 and 10": "Integer not in range of -10 and 10";
             Console.WriteLine(output);
         }
         
         //Write a method to display the multiplication table(from 1 to 12) of a given integer
         public static void DisplayMultiplicationTable()
         {
-            Console.WriteLine("Please enter a number");
+            Console.WriteLine("Please enter a number to display its multiplication Table");
             var inputNum = int.Parse(Console.ReadLine());
 
             for(var i = 1 ; i <= 12; i++)
@@ -98,10 +98,10 @@
             PrintNumbersFrom1000();
             PrintNumbersFrom3();
 
-            Console.WriteLine("Enter the first number");
+            Console.WriteLine("Time to check if 2 integers are equal.Enter the first number");
             var firstNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the second number");
-            var seconNumber = int.Parse(Console.ReadLine());
+            var secondNumber = int.Parse(Console.ReadLine());
             CheckIntegerEquality(firstNumber, secondNumber);
 
             Console.WriteLine("Enter a number to check whether its odd or even");
